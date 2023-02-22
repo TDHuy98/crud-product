@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product} from "../model/Product";
 
 @Component({
@@ -24,14 +24,19 @@ export class ProductComponent implements OnInit {
   findProduct(index: number): number{
     for (let i = 0; i < this.products.length; i++) {
       if (this.products[i].id==index)
-        return  i;
+        return i;
     }
     return -1;
   }
 
-  deleteProduct(id: number){
-    let index1= this.findProduct(id);
-    this.products.splice(index1,1);
+  deleteProduct(id: number) {
+    let index1 = this.findProduct(id);
+    this.products.splice(index1, 1);
+  }
+
+  showEdit(id1: number) {
+    let index1 = this.findProduct(id1);
+    this.product = this.products[index1];
   }
 
   editProduct(id2: number) {
