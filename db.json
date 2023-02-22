@@ -1,0 +1,23 @@
+{
+"fruits": [
+  {
+    "id": 1,
+    "name": "Acer Nitro 5",
+    "quantity": 10,
+    "price": 25000000
+  },  {
+    "id": 2,
+    "name": "Asus Tuf",
+    "quantity": 10,
+    "price": 19000000
+  },
+  {
+    "id": 3,
+    "name": "Apple M1",
+    "quantity": 10,
+    "price": 35000000
+  }
+]
+
+
+}
